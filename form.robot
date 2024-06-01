@@ -3,6 +3,7 @@ Library    SeleniumLibrary
 
 
 *** Variables ***
+# XPath não generico para tag option: //option[contains(text(), "Texto da opção desejada")]
 ${input_name}                  //input[@placeholder="First Name" and @id="firstName" and @type="text"]
 ${input_lastname}              //input[@placeholder="Last Name" and @id="lastName" and @type="text"]
 ${input_email}                 //input[@placeholder="name@example.com" and @id="userEmail"]
