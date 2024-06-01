@@ -111,13 +111,13 @@ Test Example
     Click Button    //button[text()='Submit']
     Close Browser
 Dicas e Boas Práticas
-Prefira XPath Relativo: Eles são menos propensos a quebrar quando a estrutura da página muda.
-Use Funções XPath: Funções como contains() e starts-with() tornam os seletores mais flexíveis.
-Teste Seus Seletores: Utilize ferramentas de desenvolvedor nos navegadores (como o Chrome DevTools) para testar seus seletores XPath antes de usá-los em scripts de automação.
-Mantenha a Simplicidade: Escreva seletores simples e claros para facilitar a manutenção do código.
+    - Prefira XPath Relativo: Eles são menos propensos a quebrar quando a estrutura da página muda.
+    - Use Funções XPath: Funções como contains() e starts-with() tornam os seletores mais flexíveis.
+    - Teste Seus Seletores: Utilize ferramentas de desenvolvedor nos navegadores (como o Chrome DevTools) para testar seus seletores XPath antes de usá-los em scripts de automação.
+    - Mantenha a Simplicidade: Escreva seletores simples e claros para facilitar a manutenção do código.
 Ferramentas Úteis
-Chrome DevTools: Inspecione elementos e teste XPath diretamente no console.
-Firefox Developer Tools: Oferece ferramentas semelhantes ao Chrome DevTools.
-XPath Helper: Extensão para navegadores que ajuda a criar e testar expressões XPath.
+    - Chrome DevTools: Inspecione elementos e teste XPath diretamente no console.
+    - Firefox Developer Tools: Oferece ferramentas semelhantes ao Chrome DevTools.
+    - XPath Helper: Extensão para navegadores que ajuda a criar e testar expressões XPath.
 Conclusão
-Compreender e utilizar expressões XPath eficazes é fundamental para a automação de testes com o Robot Framework. Este guia fornece uma base sólida para começar a escrever e otimizar seletores XPath, permitindo a criação de scripts de automação mais robustos e resilientes.
+    - Compreender e utilizar expressões XPath eficazes é fundamental para a automação de testes com o Robot Framework. Este guia fornece uma base sólida para começar a escrever e otimizar seletores XPath, permitindo a criação de scripts de automação mais robustos e resilientes.
