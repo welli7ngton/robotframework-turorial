@@ -3,14 +3,14 @@ Library    SeleniumLibrary
 
 
 *** Variables ***
-${input_name}                  id:firstName
-${input_lastname}              id:lastName
-${input_email}                 id:userEmail
-${gender_radio}                id:gender-radio-1
-${input_user_number}           id:userNumber
-${input_date_of_birth}         id:dateOfBirthInput
-${button_submit}               id:submit
-${textarea_current_address}    id:currentAddress
+${input_name}                  //input[@placeholder="First Name" and @id="firstName" and @type="text"]
+${input_lastname}              //input[@placeholder="Last Name" and @id="lastName" and @type="text"]
+${input_email}                 //input[@placeholder="name@example.com" and @id="userEmail"]
+${gender_radio_male}           //label[@for="gender-radio-1" and @class="custom-control-label"]
+${input_user_number}           //input[@type="text" and @placeholder="Mobile Number" and @id="userNumber"]
+# ${input_date_of_birth}         //input[@type="text" and @id="dateOfBirthInput"] 
+${textarea_current_address}    //textarea[@id="currentAddress" and @placeholder="Current Address" and @rows="5" and @cols="20"]
+${button_submit}               //button[@type="submit" and @id="submit" and @class="btn btn-primary"]
 
 
 *** Keywords ***
@@ -18,23 +18,21 @@ abrir navegador e acessa o site
     Open Browser    https://demoqa.com/automation-practice-form     chrome
 
 preencher campos
-    Sleep    1
-    Input Text    ${input_name}          teste
-    Sleep    1
-    Input Text    ${input_lastname}      oioioi
+    Input Text    ${input_name}          TESTE NAME
+    Input Text    ${input_lastname}      TESTE LASTNAME
     Sleep    1
     Input Text    ${input_email}         teste@email.com
     Sleep    1
+    Click Element    ${gender_radio_male}
     Input Text    ${input_user_number}   88998129128
-    Sleep    1
-    Input Text    ${textarea_current_address}   xxxxxxxxxxxxxxxxxxxxxxxx
+    Input Text    ${textarea_current_address}   TEST ADDRESS ADDRESS ADDRESS ADDRESS
     Sleep    1
     clicar em algo
-    Sleep    5
+    Sleep    2
 
 clicar em algo
     # Wait Until Element Is Visible    ${button_submit}    10
-    Click Element    ${button_submit}
+    Click Element    ${gender_radio_male}
 fechar navegador
     Close Browser
 *** Test Cases ***
