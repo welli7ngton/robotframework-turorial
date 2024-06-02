@@ -1,6 +1,6 @@
 *** Settings ***
 
-Library    ../venv/lib/python3.10/site-packages/robot/libraries/String.py
+Library    String
 
 *** Variables ***
 # Dentro do escopo de Variables não é necessário o uso da keyword 'Set Variable'
