@@ -33,7 +33,7 @@ Cadastrar um usuario na api
     ...    password=12345678
     ...    administrador=true
     Log    ${body}
-    # Criar sessao na api
+
     ${response}    POST On Session
     ...    alias=ApiSession
     ...    url=/usuarios
